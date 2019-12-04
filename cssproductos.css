@@ -12,42 +12,9 @@ body{
     src: url("Nickainley-Normal.woff2");
 }
 
-
-#cerrar{
-    display: none;
-}
-
-#cerrar + label{
-    position: fixed;
-    color: #fff;
-    font-size: 25px;
-    z-index: 50;
-    background: darkred;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    border-radius: 50%;
-    right: 10px;
-    cursor: pointer;
-    animation: modal 2s;
-    animation-fill-mode: forwards;
-    visibility: hidden;
-    opacity: 0;
-}
-
-#cerrar:checked + label, #cerrar:checked ~ .modal{
-    display: none;
-    overflow-y: scroll;
-}
-
-@keyframes modal{
-    100%{
-        visibility: visible;
-        opacity: 1;
-    }
-}
-
-#content{
+#content2{
+    position: relative;
+    z-index: 0;
     max-width: 100%;
     height: auto;
     padding: 0 10%;
@@ -82,9 +49,9 @@ body{
   	border-top-right-radius: 50% 50%;
     border-bottom-right-radius: 50% 50%;
     border-bottom-left-radius: 50% 50%;
-    
-    
-}   
+
+
+}
 
 
 
@@ -116,8 +83,10 @@ body{
 }
 
 .all{
-    top: 20%;
     position: absolute;
+    top: 20%;
+    width: 100%;
+    max-width: 100%;
 }
 
 .Timg{
@@ -131,22 +100,28 @@ figure.snip0015 {
     position: relative;
     overflow: hidden;
     margin: 10px;
-    min-width: 220px;
-    max-width: 310px;
-    max-height: 220px;
-    width: 100%;
+    width: 300px;
+    height: 220px;
     background: #000000;
     text-align: center;
 
   }
+@media screen and (max-width: 750px) {
+    figure.snip0015{
+        min-width: 200px;
+        max-width: 250px;
+        max-height: 200px;
+    }
+
+}
   figure.snip0015 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
   figure.snip0015 img {
     opacity: 1;
-    width: 400px;
-      height: 200px;
+    width: 100%;
+      height: 220px;
     -webkit-transition: opacity 0.35s;
     transition: opacity 0.35s;
   }

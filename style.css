@@ -17,7 +17,6 @@ body{
     position: fixed;
     z-index: 50;
     font-size: 2vw;
-
 }
 #barra2{
     left: 0;
@@ -66,7 +65,7 @@ body{
         top: 0;
         bottom: 0;
         left:-300px;
-        max-width: 300px;
+        width: 50%;
         z-index: 1;
         padding: 90px 30px 30px;
         background: #68C5DB;
@@ -262,7 +261,9 @@ iframe{
 .all
 {
     top: 80%;
+    display: flex;
 }
+
 }
 
 .ImgR{
